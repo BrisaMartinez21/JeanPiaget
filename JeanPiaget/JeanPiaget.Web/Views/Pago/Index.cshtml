@@ -1,0 +1,214 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Web.Models.Pagos.PagoVMPaginacion
+
+@{
+    ViewData["Title"] = "Pagos";
+    var fechactual = DateTime.Now;
+    Model.FiltrosDisponibles = new List<SelectListItem>
+    {
+        new SelectListItem { Value = "1", Text = "Nombre" },
+        new SelectListItem { Value = "3", Text = "Grado" },
+    };
+    var contador = 1;
+    int startIndex = (Model.PaginaActual - 1) * Model.RegistrosPorPagina;
+}
+
+@functions {
+    public string ObtenerNombreMes(int numeroMes)
+    {
+        switch (numeroMes)
+        {
+            case 1:
+                return "Enero";
+            case 2:
+                return "Febrero";
+            case 3:
+                return "Marzo";
+            case 4:
+                return "Abril";
+            case 5:
+                return "Mayo";
+            case 6:
+                return "Junio";
+            case 7:
+                return "Julio";
+            case 8:
+                return "Agosto";
+            case 9:
+                return "Septiembre";
+            case 10:
+                return "Octubre";
+            case 11:
+                return "Noviembre";
+            case 12:
+                return "Diciembre";
+            default:
+                return "Mes no válido";
+        }
+    }
+}
+
+<div class="container-fluid" style="background: #FFF; max-width: 90%;">
+    <div class="d-flex justify-content-center mt-5">
+        <h1 id="titulo" class="align-items-center mt-5" style="
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(0, 0, 0);">
+            Pagos
+        </h1>
+    </div>
+    <br>
+
+    <div class="flex container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="mx-0">
+                    <form asp-action="Index" method="get" class="row g-3">
+                        <!-- Barra de búsqueda -->
+                        <div class="col-md-4">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="buscarItem" value="@Model.BuscarItem" placeholder="Buscar...">
+                                <button class="btn btn-primary" type="submit">Buscar</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="margin-left:30px">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="miSelect" class="form-label">Buscar por:</label>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select" aria-label="Small select example" name="filtroBusqueda">
+                                        @foreach (var filtro in Model.FiltrosDisponibles)
+                                        {
+                                            @if (Model.FiltroBusqueda == int.Parse(filtro.Value))
+                                            {
+                                                <option value="@filtro.Value" selected>@filtro.Text</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@filtro.Value">@filtro.Text</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="mx-0">
+                    <table class="table table-striped table-spacing">
+                        <thead>
+                            <tr id="encabezadoTabla" style=" background-color: #5d713b;
+                            color: #FFF" class="align-items-center">
+                                <th scope="col">Nº</th>
+                                <th scope="col">Alumno</th>
+                                <th scope="col">Grado</th>
+                                <th scope="col">mes</th>
+                                <th scope="col">Beca</th>
+                                <th scope="col">Monto</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Acciones</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var alumno in Model.Alumnos)
+                            {
+                                <tr>
+                                    <th scope="row">@((startIndex + contador))</th>
+                                    <td>@alumno.Alumno.Nombre @alumno.Alumno.Paterno @alumno.Alumno.Materno</td>
+                                    <td>@alumno.Alumno.Grado.Fase° @alumno.Alumno.Grado.Nivel</td>
+                                    <td>
+                                        @($"{ObtenerNombreMes(fechactual.Month)}")
+                                    </td>
+                                    <td>
+                                        @if (alumno.Alumno.Beca != null)
+                                        {
+                                            @($"{alumno.Alumno.Beca}%")
+                                        }
+                                        else
+                                        {
+                                            @($"No tiene beca")
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (alumno.Alumno.Beca != null)
+                                        {
+                                            @($"${alumno.Alumno.Mensualidad}")
+                                        }
+                                        else
+                                        {
+                                            @($"${alumno.Alumno.Mensualidad}")
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (alumno.Status)
+                                        {
+                                            if (alumno.Pago != null && alumno.Pago.Concepto!=null)
+                                            {
+                                                @("Pagado (" + alumno.Pago.Concepto + ")")
+                                            }
+                                            else
+                                            {
+                                                @("Pagado (No tiene pagos aún)")
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (alumno.Pago != null && alumno.Pago.Concepto != null)
+                                            {
+                                                @("Deudor (" + alumno.Pago.Concepto + ")")
+                                            }
+                                            else
+                                            {
+                                                @("Deudor (No tiene pagos aún)")
+                                            }
+                                        }
+                                    </td>
+
+                                    <td>
+                                        <a asp-action="Create" asp-route-id="@alumno.Alumno.Id">
+                                            <button type="button" class="btn btn-sm"
+                                                    style="background: #5d713b; color:#FFF">
+                                                Registrar pago
+                                            </button>
+                                        </a>
+                                        <a asp-action="Consultar" asp-route-id="@alumno.Alumno.Id">
+                                            <button type="button"
+                                                    class="btn btn-sm btn-danger">
+                                                Ver pagos
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                contador++;
+                            }
+                        </tbody>
+                    </table>
+                    <div class="float-end">
+                        @{
+                            if (Model.EsBuscador)
+                            {
+                                await Html.RenderPartialAsync("~/Views/Shared/PaginadorBuscador.cshtml", Model);
+                            }
+                            else
+                            {
+                                await Html.RenderPartialAsync("~/Views/Shared/Paginador.cshtml", Model);
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+﻿(function () {
+    $("#GradoId").select2();
+}());

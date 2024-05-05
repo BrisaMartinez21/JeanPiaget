@@ -1,0 +1,17 @@
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\bin\Debug\net7.0\JeanPiaget.ApplicationServices.deps.json
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\bin\Debug\net7.0\JeanPiaget.ApplicationServices.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\bin\Debug\net7.0\JeanPiaget.ApplicationServices.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\bin\Debug\net7.0\JeanPiaget.Core.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\bin\Debug\net7.0\JeanPiaget.DataAccess.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\bin\Debug\net7.0\JeanPiaget.Core.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\bin\Debug\net7.0\JeanPiaget.DataAccess.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiaget.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiaget.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiaget.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiaget.ApplicationServices.AssemblyInfo.cs
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiaget.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiag.5760FCA6.Up2Date
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiaget.ApplicationServices.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\refint\JeanPiaget.ApplicationServices.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\JeanPiaget.ApplicationServices.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.ApplicationServices\obj\Debug\net7.0\ref\JeanPiaget.ApplicationServices.dll

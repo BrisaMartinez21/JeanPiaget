@@ -1,0 +1,17 @@
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\bin\Debug\net7.0\JeanPiaget.DataAccess.deps.json
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\bin\Debug\net7.0\JeanPiaget.DataAccess.runtimeconfig.json
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\bin\Debug\net7.0\JeanPiaget.DataAccess.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\bin\Debug\net7.0\JeanPiaget.DataAccess.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\bin\Debug\net7.0\JeanPiaget.Core.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\bin\Debug\net7.0\JeanPiaget.Core.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.AssemblyInfo.cs
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiag.9C6E34AE.Up2Date
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\refint\JeanPiaget.DataAccess.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\JeanPiaget.DataAccess.genruntimeconfig.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.DataAccess\obj\Debug\net7.0\ref\JeanPiaget.DataAccess.dll

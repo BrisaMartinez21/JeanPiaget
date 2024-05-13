@@ -1,0 +1,24 @@
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\bin\Debug\net7.0\JeanPiaget.Core.deps.json
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\bin\Debug\net7.0\JeanPiaget.Core.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\bin\Debug\net7.0\JeanPiaget.Core.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.AssemblyInfo.cs
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\refint\JeanPiaget.Core.dll
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.pdb
+C:\Users\david\source\repos\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\ref\JeanPiaget.Core.dll
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\bin\Debug\net7.0\JeanPiaget.Core.deps.json
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\bin\Debug\net7.0\JeanPiaget.Core.dll
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\bin\Debug\net7.0\JeanPiaget.Core.pdb
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.csproj.AssemblyReference.cache
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.AssemblyInfoInputs.cache
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.AssemblyInfo.cs
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.csproj.CoreCompileInputs.cache
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.dll
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\refint\JeanPiaget.Core.dll
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\JeanPiaget.Core.pdb
+C:\Users\Brisa Martinez\Downloads\JP-System-main\JP-System-main\JeanPiaget\JeanPiaget.Core\obj\Debug\net7.0\ref\JeanPiaget.Core.dll

@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Brisa Martinez\\Downloads\\JP-System-main\\JP-System-main\\JeanPiaget\\JeanPiaget.Core\\JeanPiaget.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Brisa Martinez\\Downloads\\JP-System-main\\JP-System-main\\JeanPiaget\\JeanPiaget.Core\\JeanPiaget.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brisa Martinez\\Downloads\\JP-System-main\\JP-System-main\\JeanPiaget\\JeanPiaget.Core\\JeanPiaget.Core.csproj",
+        "projectName": "JeanPiaget.Core",
+        "projectPath": "C:\\Users\\Brisa Martinez\\Downloads\\JP-System-main\\JP-System-main\\JeanPiaget\\JeanPiaget.Core\\JeanPiaget.Core.csproj",
+        "packagesPath": "C:\\Users\\Brisa Martinez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brisa Martinez\\Downloads\\JP-System-main\\JP-System-main\\JeanPiaget\\JeanPiaget.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Brisa Martinez\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

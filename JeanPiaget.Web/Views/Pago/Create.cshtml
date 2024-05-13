@@ -1,0 +1,147 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Web.Models.Pagos.PagoVM
+
+@{
+    ViewData["Title"] = "Pago/Create";
+}
+
+@section Head {
+    <link href="~/lib/jquery/select2.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.theme.min.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="~/lib/jquery/select2.min.js"></script>
+    <script src="~/views/Pago/Create.js"></script>
+}
+
+<br>
+<div class="container">
+    <section class="section">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header VerdeWhite">
+                        <h3>Nuevo Pago</h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Create">
+                            <input asp-for="Id" type="text" class="form-control" hidden>
+                            <div class="row">
+                                <div class="col">
+                                    <label asp-for="Nombre">Nombre</label>
+                                    <input asp-for="Nombre" type="text" class="form-control" readonly>
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label asp-for="Nivel">Nivel</label>
+                                            <input asp-for="Nivel" type="text" class="form-control" readonly>
+                                            <span asp-validation-for="Nivel" class="text-danger"></span>
+                                        </div>
+                                        <div class="col">
+                                            <label asp-for="Fase">Fase</label>
+                                            <input asp-for="Fase" type="text" class="form-control" readonly>
+                                            <span asp-validation-for="Fase" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label asp-for="Beca">Beca</label>
+                                            <input asp-for="Beca" type="text" class="form-control" readonly>
+                                            <span asp-validation-for="Beca" class="text-danger"></span>
+                                        </div>
+                                        <div class="col">
+                                            <label asp-for="Mensualidad">Mensualidad</label>
+                                            <input asp-for="Mensualidad" type="text" class="form-control" readonly>
+                                            <span asp-validation-for="Mensualidad" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="TotalPagar">Total a Pagar</label>
+                                    <input asp-for="TotalPagar" type="text" class="form-control" readonly>
+                                    <span asp-validation-for="TotalPagar" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <label asp-for="Folio">Folio</label>
+                                        <input asp-for="Folio" type="text" class="form-control">
+                                        <span asp-validation-for="Folio" class="text-danger"></span>
+                                    </div>
+                                    <div class="col">
+                                        <label asp-for="Monto">Monto</label>
+                                        <input asp-for="Monto" type="text" class="form-control">
+                                        <span asp-validation-for="Monto" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <label asp-for="Concepto">Concepto</label>
+                                        <select asp-for="Concepto" class="form-control">
+                                            <option value="0" selected disabled>Selecciona un concepto</option>
+                                            <option value="1">Enero</option>
+                                            <option value="2">Febrero</option>
+                                            <option value="3">Marzo</option>
+                                            <option value="4">Abril</option>
+                                            <option value="5">Mayo</option>
+                                            <option value="6">Junio</option>
+                                            <option value="7">Julio</option>
+                                            <option value="8">Agosto</option>
+                                            <option value="9">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                            <option value="13">Cuota Tecnológica</option>
+                                            <option value="14">Cuota Anual</option>
+                                        </select>
+                                        <span asp-validation-for="Concepto" class="text-danger"></span>
+                                    </div>
+                                    <div class="col">
+                                        <label asp-for="FechaActual">Fecha Actual</label>
+                                        <input asp-for="FechaActual" type="text" class="form-control" disabled>
+                                        <span asp-validation-for="FechaActual" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div id="formGrado" style="@((Model.Concepto == 14) ? "display:block;" : "display:none;")" class="col-md-6">
+                                        <label asp-for="GradoId">Cambiar grado al alumno</label>
+                                        <select asp-for="GradoId" asp-items=@Model.Grados class="form-control">
+                                            <option selected disabled>Seleccionar un grado</option>
+                                        </select>
+                                        <span asp-validation-for="GradoId" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button id="enviar" type="submit" class="btn VerdeWhite">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

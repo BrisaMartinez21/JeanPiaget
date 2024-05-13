@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Core.DTOs.Usuarios.UsuarioRolDTO
+
+@{
+}
+
+<br>
+@if (Model != null)
+{
+    <div class="container">
+        <div class="card">
+            <div class="card-header" style="background: #425444; color: #fff;">
+                <h3>Mi cuenta</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col ">
+                        <label asp-for="Usuario.Nombre">Nombre</label>
+                        <input asp-for="Usuario.Nombre" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="col">
+                        <label asp-for="Usuario.FechaNacimiento">Fecha Nacimiento</label>
+                        <input asp-for="Usuario.FechaNacimiento" type="text" class="form-control" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label asp-for="Usuario.Paterno">Apellido Paterno</label>
+                        <input asp-for="Usuario.Paterno" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="col">
+                        <label asp-for="Usuario.Genero">Sexo</label>
+                        <input asp-for="Usuario.Genero" type="text" class="form-control" readonly>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label asp-for="Usuario.Materno">Apellido Materno</label>
+                        <input asp-for="Usuario.Materno" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="col">
+                        <label asp-for="Usuario.Cargo">Cargo</label>
+                        <input asp-for="Usuario.Cargo" type="text" class="form-control" readonly>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label asp-for="Usuario.FechaCreacion">Fecha de creación</label>
+                        <input asp-for="Usuario.FechaCreacion" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="col">
+                        <label asp-for="Usuario.Email">Correo</label>
+                        <input asp-for="Usuario.Email" type="text" class="form-control" readonly>
+                    </div>
+                    <div class="col">
+                        <label asp-for="Role.Name">Rol</label>
+                        <input asp-for="Role.Name" type="text" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <h1 class="h1 ContImagen">**No se encontro un usuario**</h1>
+    </div>
+}

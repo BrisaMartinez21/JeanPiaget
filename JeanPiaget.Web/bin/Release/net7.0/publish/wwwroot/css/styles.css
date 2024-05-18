@@ -1,0 +1,32 @@
+.BodyStyle {
+    background: #e3dbc2;
+}
+
+.BodyLoginStyle {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.ContImagen {
+    text-align: center;
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BasePrincipal {
+    background-color: #e3dbc2;
+}
+
+.VerdeBase {
+    background-color: #425444;
+}
+
+.VerdeWhite {
+    background: #425444;
+    color: #fff;
+}

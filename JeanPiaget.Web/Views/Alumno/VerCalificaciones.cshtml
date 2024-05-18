@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Web.Models.Alumnos.VerCalificacionesVM
+
+@{
+    ViewData["Title"] = "Alumnos/Calificaciones";
+}
+<div class="container" style="margin-top: 5%; background: #FFF;">
+    <div class="card-header" style="background: #425444; color: #fff;">
+        <h1 class="h1 ContImagen">Calificaciones de @Model.Alumno.Nombre @Model.Alumno.Paterno @Model.Alumno.Materno</h1>
+    </div>
+
+    <br>
+    @if (Model.Materias != null && Model.Materias.Count > 0)
+    {
+        @for(int i = 1; i <= 3; i++)
+        {
+            <div class="row mb-3">
+                <h3>Trimestre @i</h3>
+                @foreach (var materia in Model.Materias)
+                {
+                    <div class="col">
+                        <div class="card cartas mb-3" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent cartastitulo">@materia.Nombre</div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Clave de Materia: @materia.Clave</li>
+                                        <li>Nota: @Model.Alumno.Grado.Fase° @Model.Alumno.Grado.Nivel</li>
+                                        <li>Nota: No registrada aún</li>
+                                    </ul>
+                                </p>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <a asp-controller="" asp-action="" asp-route-pagoId="@materia.Id">
+                                        <button type="button" class="btn btn-sm"
+                                                style="background: #425444; color: #fff;">
+                                            Registrar calificación
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    }
+    else
+    {
+        <h1 class="h1 ContImagen">**Este alumno no tiene materias asignadas**</h1>
+    }
+</div>

@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Web.Models.Materias.MateriaVM
+
+@{
+    ViewData["Title"] = "Materia/Create";
+}
+
+@section Head {
+    <link href="~/lib/jquery/select2.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.theme.min.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="~/lib/jquery/select2.min.js"></script>
+    <script src="~/views/Materia/Create.js"></script>
+}
+
+<br>
+<div class="container">
+    <section class="section">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header VerdeWhite">
+                        <h3>Nueva Materia</h3>
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="link-light" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li class="breadcrumb-item"><a class="link-light" asp-controller="Materia" asp-action="Index">Materias</a></li>
+                                <li class="breadcrumb-item">Nueva Materia</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Create">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label asp-for="Nombre">Nombre</label>
+                                    <input asp-for="Nombre" type="text" class="form-control">
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+                                @*<div class="col">
+                                    <label asp-for="Clave">Clave</label>
+                                    <input asp-for="Clave" type="text" class="form-control">
+                                    <span asp-validation-for="Clave" class="text-danger"></span>
+                                </div>*@
+                                <div class="col">
+                                    <label asp-for="GradoId">Grado</label>
+                                    <select asp-for="GradoId" asp-items=@Model.Grados class="form-control">
+                                        <option selected disabled>Seleccionar un grado</option>
+                                    </select>
+                                    <span asp-validation-for="GradoId" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button id="enviar" type="submit" class="btn VerdeWhite">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+

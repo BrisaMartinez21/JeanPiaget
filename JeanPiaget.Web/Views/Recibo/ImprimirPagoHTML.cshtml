@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Core.Pagos.Pago
+
+@{
+    var fechaActual = DateTime.Now;
+    Layout = "~/Views/Shared/CleanLayout.cshtml";
+}
+
+@section Head {
+    <link href="~/css/ImprimirPago.css" rel="stylesheet" />
+}
+
+<div class="container">
+    <div class="recibo">
+        <div class="container-recibo">
+            <div class="row">
+                <div class="col-2">
+                    <img src="~/images/logoSinFondo.png" alt="Logo" width="100" height="100" class="rounded float-start">
+                </div>
+                <div class="col-8">
+                    <h1 class="h1 tituloPrincipal">
+                        <b>Pago Registrado</b>
+                    </h1>
+                </div>
+                <div class="col-2">
+                    <h4 class="informacion float-end">informacion</h4>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 class="h3 subtitulos">Datos del Pago</h3>
+        <hr>
+
+        <div class="informacion">
+            <label for="folio">Folio:</label>
+            <span id="folio">@Model.Folio</span><br>
+
+            <label for="referencia">Referencia:</label>
+            <span id="referencia">@Model.Referencia</span><br>
+
+            <label for="monto">Monto:</label>
+            <span id="monto">@Model.Monto</span><br>
+
+            <label for="modalidad">Modalidad:</label>
+            <span id="modalidad">@Model.Concepto</span><br>
+
+            <label for="fechaPago">Fecha:</label>
+            <span id="fechaPago">@Model.FechaPago</span>
+        </div>
+
+        <br>
+        <h3 class="h3 subtitulos">Datos del Alumno</h3>
+        <hr>
+
+        <div class="informacion">
+            <label for="nombre">Nombre:</label>
+            <span id="nombre">@Model.Folio</span><br>
+
+            <label for="matricula">Matricula:</label>
+            <span id="matricula">@Model.Folio</span><br>
+
+            <label for="grado">Grado:</label>
+            <span id="grado">@Model.Folio</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,157 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Web.Models.Alumnos.AlumnoVM
+
+@{
+}
+@section Head {
+    <link href="~/lib/jquery/select2.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link href="~/lib/jqueryui/jquery-ui.theme.min.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="~/lib/jquery/select2.min.js"></script>
+    <script src="~/views/Alumno/Create.js"></script>
+}
+
+<br>
+<div class="container">
+    <section class="section">
+        <div class="row">
+            <div class="col">
+                <form asp-action="Create">
+                    <div class="card">
+                        <div class="card-header" style="background: #425444; color: #fff;">
+                            <h3>Datos del Alumno</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col ">
+                                    <label asp-for="Nombre">Nombre</label>
+                                    <input asp-for="Nombre" type="text" class="form-control">
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="Paterno">Apellido Paterno</label>
+                                    <input asp-for="Paterno" type="text" class="form-control">
+                                    <span asp-validation-for="Paterno" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="Materno">Apellido Materno</label>
+                                    <input asp-for="Materno" type="text" class="form-control">
+                                    <span asp-validation-for="Materno" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="FechaNacimiento" class="form-check-label">Fecha de Nacimiento</label>
+                                    <input type="text" class="form-control" asp-for="FechaNacimiento">
+                                    <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label asp-for="Genero">Género</label>
+                                    <select class="form-control" asp-for="Genero" required>
+                                        <option value="" selected disabled>Seleccionar género</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Femenino">Femenino</option>
+                                    </select>
+                                    <span asp-validation-for="Genero" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="Mensualidad">Mensualidad</label>
+                                    <input asp-for="Mensualidad" type="text" class="form-control">
+                                    <span asp-validation-for="Mensualidad" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="Modalidad">Modalidad de Pago</label>
+                                    <select asp-for="Modalidad" class="form-control" required>
+                                        <option selected disabled>Seleccionar una modalidad</option>
+                                        <option value="10">10 meses</option>
+                                        <option value="12">12 meses</option>
+                                    </select>
+                                    <span asp-validation-for="Modalidad" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="GradoId">Grado</label>
+                                    <select asp-for="GradoId" asp-items=@Model.Grados class="form-control">
+                                        <option selected disabled>Seleccionar un grado</option>
+                                    </select>
+                                    <span asp-validation-for="GradoId" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label asp-for="Beca">Beca</label>
+                                            <input asp-for="Beca" type="text" class="form-control">
+                                            <span asp-validation-for="Beca" class="text-danger"></span>
+                                        </div>
+                                        <div class="col">
+                                            <br>
+                                            <p class="float-start">%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card mb-3">
+                        <div class="card-header" style="background: #425444; color: #fff;">
+                            <h3>Datos del Tutor</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col ">
+                                    <label asp-for="NombreTutor">Nombre del Tutor</label>
+                                    <input asp-for="NombreTutor" type="text" class="form-control">
+                                    <span asp-validation-for="NombreTutor" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="PaternoTutor">Apellido Paterno del Tutor</label>
+                                    <input asp-for="PaternoTutor" type="text" class="form-control">
+                                    <span asp-validation-for="PaternoTutor" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="MaternoTutor">Apellido Materno del Tutor</label>
+                                    <input asp-for="MaternoTutor" type="text" class="form-control">
+                                    <span asp-validation-for="MaternoTutor" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label asp-for="GeneroTutor">Género del Tutor</label>
+                                    <select class="form-control" asp-for="GeneroTutor" required>
+                                        <option value="" selected disabled>Seleccionar género</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Femenino">Femenino</option>
+                                    </select>
+                                    <span asp-validation-for="GeneroTutor" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="TelefonoTutor" class="form-check-label">Télefono del Tutor</label>
+                                    <input type="tel" class="form-control" asp-for="TelefonoTutor">
+                                    <span asp-validation-for="TelefonoTutor" class="text-danger"></span>
+                                </div>
+                                <div class="col">
+                                    <label asp-for="CorreoElectronico" class="form-check-label">Correo Electronico del Tutor</label>
+                                    <input type="email" class="form-control" asp-for="CorreoElectronico">
+                                    <span asp-validation-for="CorreoElectronico" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button id="enviar" type="submit" class="btn" style="background: #425444; color: #fff;">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>

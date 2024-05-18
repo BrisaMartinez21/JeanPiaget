@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model JeanPiaget.Web.Models.Materias.GradosVM
+
+@{
+    ViewData["Title"] = "Grados";
+}
+
+@section Head {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+}
+
+<div class="container-fluid" style="background: #FFF; max-width: 90%;">
+    <div class="d-flex justify-content-center mt-5">
+        <h1 id="titulo" class="align-items-center mt-5" style="
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(0, 0, 0);">
+            Materias
+        </h1>
+    </div>
+    <br>
+
+    <div class="flex container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="mx-0">
+                    <table class="table table-striped table-spacing ContImagen">
+                        <thead>
+                            <tr id="encabezadoTabla" style=" background-color: #5d713b;
+                            color: #FFF" class="align-items-center">
+                                <th scope="col">Fase</th>
+                                <th scope="col">Nivel</th>
+                                <th scope="col">Alumnos</th>
+                                <th scope="col">Imprimir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var grado in Model.Grados)
+                            {
+                                <tr>
+                                    <td class="col-3">@grado.Grado.Fase°</td>
+                                    <td class="col-3">@grado.Grado.Nivel</td>
+                                    <td class="col-1">@grado.Cantidad</td>
+                                    <td class="col-3">
+                                        <a asp-controller ="Recibo" asp-action="ImprimirListaVertical" asp-route-gradoId="@grado.Grado.Id" asp-route-tipoLista="Listada de alumnos">
+                                            <button id="exportar" class="btn mr-3 mb-3 btn-sm"
+                                                    style="background: #5d713b; color:#FFF">
+                                                <i class="fas fa-file-export"></i>
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

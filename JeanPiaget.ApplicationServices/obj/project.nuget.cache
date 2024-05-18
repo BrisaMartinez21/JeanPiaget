@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "NEWgzqxfzEXs92/d7yrD9yd6oEFdo3o6AeyR/kpAGGTBz1XUmQ+rrhfy7kTuQqeA4E+PxkqFoiHGpvESwvzz7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Brisa Martinez\\Downloads\\JP-System-main\\JP-System-main\\JeanPiaget\\JeanPiaget.ApplicationServices\\JeanPiaget.ApplicationServices.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.18\\microsoft.aspnetcore.cryptography.internal.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.18\\microsoft.aspnetcore.cryptography.keyderivation.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.18\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.18\\microsoft.aspnetcore.identity.ui.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.18\\microsoft.entityframeworkcore.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.18\\microsoft.entityframeworkcore.abstractions.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.18\\microsoft.entityframeworkcore.analyzers.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.18\\microsoft.entityframeworkcore.relational.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\7.0.18\\microsoft.extensions.fileproviders.embedded.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.18\\microsoft.extensions.identity.core.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.18\\microsoft.extensions.identity.stores.7.0.18.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\Brisa Martinez\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
